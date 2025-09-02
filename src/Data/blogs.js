@@ -1,0 +1,42 @@
+export const blogs = [
+  {
+    id: 1,
+    title: 'Top 5 AI Trends in 2024',
+    summary: 'Explore the latest trends shaping the AI industry this year, including generative AI, AI ethics, and more.',
+    content: `Artificial Intelligence continues to evolve rapidly in 2024. Key trends include generative AI models, AI in healthcare, ethical AI development, and AI-powered automation. Stay ahead by learning these technologies.`,
+    image: 'https://via.placeholder.com/600x300?text=AI+Trends+2024',
+    date: '2024-05-01',
+  },
+  {
+    id: 2,
+    title: 'How to Build a Responsive Website',
+    summary: 'Step-by-step guide to creating responsive web designs that look great on all devices.',
+    content: `Responsive web design is essential in today’s mobile-first world. Learn how to use CSS media queries, flexible grids, and Bootstrap to build websites that adapt seamlessly to any screen size.`,
+    image: 'https://via.placeholder.com/600x300?text=Responsive+Web+Design',
+    date: '2024-04-15',
+  },
+  {
+    id: 3,
+    title: 'Getting Started with DevOps',
+    summary: 'Learn the basics of DevOps culture, tools, and practices to improve software delivery.',
+    content: `DevOps combines development and operations to shorten the software lifecycle. This blog covers CI/CD pipelines, containerization with Docker, orchestration with Kubernetes, and cloud deployment strategies.`,
+    image: 'https://via.placeholder.com/600x300?text=DevOps+Basics',
+    date: '2024-03-20',
+  },
+  {
+    id: 4,
+    title: 'Big Data Analytics: Tools and Techniques',
+    summary: 'An overview of popular big data tools like Hadoop and Spark and how to analyze large datasets.',
+    content: `Big data analytics involves processing massive datasets to extract insights. Learn about Hadoop’s ecosystem, Spark’s in-memory processing, and visualization tools to make data-driven decisions.`,
+    image: 'https://via.placeholder.com/600x300?text=Big+Data+Analytics',
+    date: '2024-02-10',
+  },
+  {
+    id: 5,
+    title: 'Digital Marketing Strategies for 2024',
+    summary: 'Discover effective digital marketing strategies including SEO, social media, and email campaigns.',
+    content: `Digital marketing is constantly evolving. This blog discusses the latest SEO techniques, content marketing trends, social media engagement, and how to measure campaign success with analytics.`,
+    image: 'https://via.placeholder.com/600x300?text=Digital+Marketing+2024',
+    date: '2024-01-25',
+  },
+];
