@@ -1,5 +1,19 @@
 import React from 'react';
-import { FaLaptopCode, FaRobot, FaMobileAlt, FaDatabase, FaChartLine, FaCloud, FaShieldAlt, FaServer } from 'react-icons/fa';
+import {
+  FaLaptopCode,
+  FaRobot,
+  FaMobileAlt,
+  FaDatabase,
+  FaChartLine,
+  FaCloud,
+  FaShieldAlt,
+  FaServer,
+  FaMicrochip,
+  FaCar,
+  FaProjectDiagram,
+  FaVrCardboard,
+  FaNetworkWired,
+} from 'react-icons/fa';
 
 export const courses = [
   {
@@ -132,6 +146,87 @@ export const courses = [
       'Cloud Security Best Practices',
       'Cloud Migration Strategies',
       'Cloud Capstone Project',
+    ],
+  },
+  // 🚀 NEW Future Scope Courses
+  {
+    id: 'iot',
+    name: 'Internet of Things (IoT)',
+    icon: <FaMicrochip />,
+    duration: '6-9 months',
+    description: 'Build smart devices with sensors, Arduino, Raspberry Pi, and cloud integration.',
+    syllabus: [
+      'IoT Fundamentals & Applications',
+      'Arduino & Raspberry Pi Basics',
+      'Sensors & Actuators',
+      'IoT Communication Protocols (MQTT, CoAP)',
+      'Cloud Integration for IoT',
+      'IoT Security',
+      'IoT Capstone Project',
+    ],
+  },
+  {
+    id: 'autonomous',
+    name: 'Autonomous Vehicles',
+    icon: <FaCar />,
+    duration: '9-12 months',
+    description: 'Learn self-driving car technologies including robotics, AI, and automotive systems.',
+    syllabus: [
+      'Automotive Engineering Basics',
+      'Sensors & Lidar for Vehicles',
+      'Path Planning & Navigation',
+      'AI in Autonomous Driving',
+      'Vehicle-to-Everything (V2X) Communication',
+      'Simulation & Testing',
+      'Autonomous Vehicle Project',
+    ],
+  },
+  {
+    id: 'blockchain',
+    name: 'Blockchain & Web3',
+    icon: <FaProjectDiagram />,
+    duration: '6-9 months',
+    description: 'Understand blockchain, cryptocurrencies, smart contracts, and decentralized apps.',
+    syllabus: [
+      'Blockchain Fundamentals',
+      'Ethereum & Smart Contracts',
+      'Decentralized Applications (dApps)',
+      'NFTs & DeFi',
+      'Consensus Algorithms',
+      'Blockchain Security',
+      'Blockchain Capstone Project',
+    ],
+  },
+  {
+    id: 'arvr',
+    name: 'AR/VR Development',
+    icon: <FaVrCardboard />,
+    duration: '6-9 months',
+    description: 'Design immersive Augmented & Virtual Reality applications for multiple platforms.',
+    syllabus: [
+      'Introduction to AR & VR',
+      'Unity3D & Unreal Engine',
+      'ARKit & ARCore',
+      '3D Modeling & Animation',
+      'Immersive Experience Design',
+      'AR/VR in Automotive & Education',
+      'AR/VR Capstone Project',
+    ],
+  },
+  {
+    id: '5g',
+    name: '5G & Network Engineering',
+    icon: <FaNetworkWired />,
+    duration: '6-9 months',
+    description: 'Dive into 5G networks, edge computing, and telecom systems for next-gen connectivity.',
+    syllabus: [
+      'Networking Fundamentals',
+      '4G vs 5G Architecture',
+      'Edge Computing',
+      'IoT over 5G',
+      'Network Security in 5G',
+      'Telecom Use Cases',
+      '5G Capstone Project',
     ],
   },
 ];

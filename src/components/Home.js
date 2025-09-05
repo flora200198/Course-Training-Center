@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section with white background */}
+      {/* Hero Section */}
       <div
         style={{
           backgroundColor: 'white',
@@ -34,7 +34,7 @@ export default function Home() {
         }}
       >
         <Container>
-          <Row className="align-items-center">
+          <Row className="align-items-center mt-5">
             <Col md={7} data-aos="fade-right">
               <h1 style={{ fontWeight: 'bold', fontSize: '3rem', marginBottom: '0.5rem' }}>
                 Welcome to Training Hub
@@ -66,7 +66,7 @@ export default function Home() {
               </Link>
             </Col>
 
-            {/* Book Your Trial with half-transparent grey-white background and background video */}
+            {/* Book Your Trial */}
             <Col
               md={5}
               data-aos="fade-left"
@@ -137,6 +137,142 @@ export default function Home() {
         </Container>
       </div>
 
+      {/* Highlights Section */}
+      <Container className="mt-5">
+        <h2 className="text-center mb-4" data-aos="fade-up">
+          Why Students Choose Us
+        </h2>
+        <Row className="text-center d-flex justify-content-center" data-aos="fade-up">
+          {/* Expert Trainers */}
+          <Col md={3} sm={6} className="mb-4">
+            <div
+              style={{
+                padding: '20px',
+                borderRadius: '12px',
+                backgroundColor: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              className="h-100"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                alt="Expert Trainers"
+                style={{ width: '60px', marginBottom: '15px' }}
+              />
+              <h5 style={{ fontWeight: '600', color: '#333' }}>Expert Trainers</h5>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>
+                Learn from industry experts with hands-on experience.
+              </p>
+            </div>
+          </Col>
+
+          {/* Live Projects */}
+          <Col md={3} sm={6} className="mb-4">
+            <div
+              style={{
+                padding: '20px',
+                borderRadius: '12px',
+                backgroundColor: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              className="h-100"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2942/2942924.png"
+                alt="Live Projects"
+                style={{ width: '60px', marginBottom: '15px' }}
+              />
+              <h5 style={{ fontWeight: '600', color: '#333' }}>Live Projects</h5>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>
+                Work on real-world projects and build job-ready skills.
+              </p>
+            </div>
+          </Col>
+
+          {/* Placement Support */}
+          <Col md={3} sm={6} className="mb-4">
+            <div
+              style={{
+                padding: '20px',
+                borderRadius: '12px',
+                backgroundColor: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              className="h-100"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135800.png"
+                alt="Placement Support"
+                style={{ width: '60px', marginBottom: '15px' }}
+              />
+              <h5 style={{ fontWeight: '600', color: '#333' }}>Placement Support</h5>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>
+                Get career guidance, resume building, and placement assistance.
+              </p>
+            </div>
+          </Col>
+
+          {/* Certification */}
+          <Col md={3} sm={6} className="mb-4">
+            <div
+              style={{
+                padding: '20px',
+                borderRadius: '12px',
+                backgroundColor: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              className="h-100"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                alt="Certification"
+                style={{ width: '60px', marginBottom: '15px' }}
+              />
+              <h5 style={{ fontWeight: '600', color: '#333' }}>Recognized Certification</h5>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>
+                Earn NSDC-certified credentials for better opportunities.
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
       {/* Certification Section */}
       <div style={{ ...sectionStyle, backgroundColor: '#2a5298' }} data-aos="fade-up">
         <Container className="text-center">
@@ -154,7 +290,7 @@ export default function Home() {
       </div>
 
       {/* Why Choose Us Section */}
-      <div style={{ ...sectionStyle, backgroundColor: '#1e3c72' }} data-aos="fade-up">
+      {/* <div style={{ ...sectionStyle, backgroundColor: '#1e3c72' }} data-aos="fade-up">
         <Container>
           <h2 className="text-center mb-5">Why Choose Us?</h2>
           <Row>
@@ -181,7 +317,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
     </>
   );
 }
