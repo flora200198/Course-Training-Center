@@ -78,9 +78,9 @@ export default function NavbarMenu() {
                             <LinkContainer to="/courses">
                                 <Nav.Link style={{ color: 'var(--navy-blue)', fontWeight: 'bold' }}>Courses</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/blogs">
+                            {/* <LinkContainer to="/blogs">
                                 <Nav.Link style={{ color: 'var(--navy-blue)', fontWeight: 'bold' }}>Blogs</Nav.Link>
-                            </LinkContainer>
+                            </LinkContainer> */}
                             <LinkContainer to="/contact">
                                 <Nav.Link style={{ color: 'var(--navy-blue)', fontWeight: 'bold' }}>Contact</Nav.Link>
                             </LinkContainer>

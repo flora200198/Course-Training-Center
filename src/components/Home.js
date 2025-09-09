@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { Container, Button, Form, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
+import Slider from "react-slick";
 import 'aos/dist/aos.css';
+import SoftSkills from './Softskills';
 
 const quineBlue = '#007BFF';
 
@@ -18,6 +20,51 @@ export default function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const learningProjects = [
+  {
+    title: 'Work like Frontend Developers at AirBnB',
+    description: 'Build a highly responsive frontend for a travel app.',
+    type: 'Guided Project',
+    skills: ['HTML', 'CSS', 'Bootstrap', 'React JS']
+  },
+  {
+    title: 'Work like an Engineer at Zerodha',
+    description: 'Build a tool to analyse an investment portfolio.',
+    type: 'Guided Project',
+    skills: ['OOP', 'JSON', 'Gradle', 'Rest API']
+  },
+  {
+    title: 'Work like a senior developer at Flipkart',
+    description: 'Experience working on a live distributed system in AWS.',
+    type: 'Guided Project',
+    skills: ['Microservices', 'Kafka', 'Scaling', 'Cloud']
+  },
+  {
+    title: 'Work like Full Stack Developers at Amazon',
+    description: 'Build a functional and scalable ecommerce app.',
+    type: 'Independent Project',
+    skills: ['MongoDB', 'React JS', 'Node JS', 'Express JS']
+  },
+  {
+    title: 'Build an OTT platform like Netflix Engineers',
+    description: 'Build a video streaming fullstack app from design to deployment with GenAI.',
+    type: 'Guided Project',
+    skills: ['Prompt Engineering', 'LLM', 'Cursor', 'OpenAI']
+  },
+  {
+    title: 'Work like Backend Developers at Zomato',
+    description: 'Build a high-scale distributed web backend for a food ordering app.',
+    type: 'Independent Project',
+    skills: ['MongoDB', 'Java', 'Spring Boot', 'Redis']
+  },
+  {
+    title: 'Experience building a Google News like app',
+    description: 'Build a fully functional news aggregator like Google News.',
+    type: 'Guided Project',
+    skills: ['HTML', 'CSS', 'Rest APIs', 'Flexbox']
+  }
+];
 
   return (
     <>
@@ -175,6 +222,8 @@ export default function Home() {
             </div>
           </Col>
 
+          
+
           {/* Live Projects */}
           <Col md={3} sm={6} className="mb-4">
             <div
@@ -272,9 +321,69 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+{/* Guided Learning Projects Section */}
+<Container className="mt-5" data-aos="fade-up">
+  <h2 className="text-center mb-4">Experience-Based Learning Projects</h2>
+  <Slider
+    dots={true}
+    infinite={true}
+    speed={600}
+    slidesToShow={3}
+    slidesToScroll={1}
+    autoplay={true}            // Automatically slides
+    autoplaySpeed={2500}       // Slide every 2.5 seconds
+    pauseOnHover={true}        // Pause when user hovers
+    responsive={[
+      {
+        breakpoint: 992,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 576,
+        settings: { slidesToShow: 1 }
+      }
+    ]}
+  >
+    {learningProjects.map((proj, index) => (
+      <div key={index} style={{ padding: "0 10px" }}>
+        <div
+          style={{
+            padding: '20px',
+            borderRadius: '12px',
+            backgroundColor: 'rgba(245, 245, 245, 0.9)', // subtle background shade
+            boxShadow: '0 6px 20px rgba(0,0,0,0.1)',
+            height: '100%',
+            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+            border: '1px solid rgba(0,0,0,0.05)' // soft border
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-8px)';
+            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.15)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.1)';
+          }}
+        >
+          <h5 style={{ fontWeight: '600', color: '#333' }}>{proj.title}</h5>
+          <p style={{ color: '#555', fontSize: '0.95rem' }}>{proj.description}</p>
+          <p style={{ fontSize: '0.85rem', color: '#007BFF', fontWeight: '600' }}>
+            {proj.type}
+          </p>
+          <p style={{ fontSize: '0.85rem', color: '#555' }}>
+            Skills: {proj.skills.join(', ')}
+          </p>
+        </div>
+      </div>
+    ))}
+  </Slider>
+</Container>
+
+      <SoftSkills />
+
 
       {/* Certification Section */}
-      <div style={{ ...sectionStyle, backgroundColor: '#2a5298' }} data-aos="fade-up">
+      {/* <div style={{ ...sectionStyle, backgroundColor: '#2a5298' }} data-aos="fade-up">
         <Container className="text-center">
           <h2>Certified by NSDC</h2>
           <p style={{ maxWidth: '700px', margin: 'auto', fontSize: '1.2rem' }}>
@@ -287,7 +396,7 @@ export default function Home() {
             style={{ maxWidth: '150px', marginTop: '20px' }}
           />
         </Container>
-      </div>
+      </div> */}
 
       {/* Why Choose Us Section */}
       {/* <div style={{ ...sectionStyle, backgroundColor: '#1e3c72' }} data-aos="fade-up">
